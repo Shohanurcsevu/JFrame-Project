@@ -34,7 +34,7 @@ public class Login1 extends javax.swing.JFrame {
         tvusername = new javax.swing.JTextField();
         tvpassword = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        page = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,7 +51,7 @@ public class Login1 extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("jButton2");
+        page.setText("Signup");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -63,7 +63,7 @@ public class Login1 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(53, 53, 53)
-                        .addComponent(jButton2))
+                        .addComponent(page))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -88,7 +88,7 @@ public class Login1 extends javax.swing.JFrame {
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(page))
                 .addContainerGap(142, Short.MAX_VALUE))
         );
 
@@ -103,7 +103,15 @@ public class Login1 extends javax.swing.JFrame {
         
         if(tvusername.getText().equals(username) && tvpassword.getText().equals(password))
         {
+          
             JOptionPane.showMessageDialog(null,"Login Success Fully", " ",JOptionPane.INFORMATION_MESSAGE);
+            
+        }
+        
+        
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Login Failed", " ",JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -144,9 +152,9 @@ public class Login1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton page;
     private javax.swing.JPasswordField tvpassword;
     private javax.swing.JTextField tvusername;
     // End of variables declaration//GEN-END:variables
